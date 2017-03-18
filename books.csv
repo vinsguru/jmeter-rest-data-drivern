@@ -1,0 +1,16 @@
+test.id,test.description,title,author,http.path,http.method,input.json,assertion
+1,Get all the books,,,/books/,GET,,[]
+2,Add a new book - id=1,In Search of Lost Time,Marcel Proust,/books/,POST,books-post.json,Marcel Proust
+3,Add a new book - id=2,Don Quixote,Miguel de Cervantes,/books/,POST,books-post.json,Miguel de Cervantes
+4,Add a new book - id=3,Ulysses,James Joyce,/books/,POST,books-post.json,James Joyce
+5,Add a new book - id=4,The Odyssey,Homer,/books/,POST,books-post.json,Homer
+6,Add a new book - id=5,War and Peace,Leo Tolstoy,/books/,POST,books-post.json,Leo Tolstoy
+7,Get the 4th Book Details,,,/books/4,GET,books-post.json,"""id"": 4"
+8,Replace 4th Book details + Add price,The Odyssey,Test Automation Guru,/books/4,PUT,books-put.json,Test Automation Guru
+9,Get the 4th Book Details,,,/books/4,GET,,"""$10.00"""
+10,Update the title of the 3rd book,Jmeter is awesome,,/books/3,PATCH,books-patch.json,Jmeter is awesome
+11,Delete 1st book,,,/books/1,DELETE,,
+12,Delete 2nd book,,,/books/2,DELETE,,
+13,Delete 3rd book,,,/books/3,DELETE,,
+14,Delete 4th book,,,/books/4,DELETE,,
+15,Delete 5th book,,,/books/5,DELETE,,
